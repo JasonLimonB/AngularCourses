@@ -31,3 +31,57 @@
         </div>
     </div>
 </div>
+
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col-12">
+            <p>If we what use pipes we need use | then the name of pipe</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <div class="row">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Pipe</th>
+                        <th scope="col">Example</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>UperCase pipe</td>
+                        <td> {{ example }} -> {{ example | uppercase}}</td>
+                      </tr>
+                      <tr>
+                        <td>LowerCase pipe</td>
+                        <td> {{ example }} -> {{ example | lowercase}}</td>
+                      </tr>
+                      <tr>
+                        <td>Decimal pipe</td>
+                        <td> {{ num }} -> {{ num | number:'.0-2' }}</td>
+                      </tr>
+                      <tr>
+                        <td>Percent pipe</td>
+                        <td> {{ otherNum }} -> {{ otherNum | percent}}</td>
+                      </tr>
+                      <tr>
+                        <td>Json pipe</td>
+                        <td> {{ user }} -> {{ user | json }}</td>
+                      </tr>
+                      <tr>
+                        <td>Date pipe</td>
+                        <td> {{ myDate }} -> {{ myDate | date }}</td>
+                      </tr>
+                      
+                      <tr>
+                        <td>Custom pipe</td>
+                        <td> {{ myOwnPipe }} -> {{ myOwnPipe | mypipe }}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+</div>
