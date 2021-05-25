@@ -1,0 +1,33 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12">
+            <p>For now I implemented a Routes and how tu work directives</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>The following alert will show if the condition is true using NgIf</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <div class="alert alert-info" role="alert" *ngIf="condition">
+                The condition is True
+            </div>
+            <div class="alert alert-danger" role="alert" *ngIf="!condition">
+                The condition is False
+            </div>
+        </div>
+        <div class="col-6">
+            <button type="button" class="btn btn-outline-primary" (click)="changeValue()">Switch</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            NgFor
+            <ul>
+                <li *ngFor="let user of arrUsuers"> {{ user }} </li>
+            </ul>
+        </div>
+    </div>
+</div>
