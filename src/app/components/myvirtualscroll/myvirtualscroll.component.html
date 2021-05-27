@@ -1,0 +1,5 @@
+<cdk-virtual-scroll-viewport itemSize="5" class="virtualBox">
+    <div *cdkVirtualFor="let d of data; let i = index; let count = count">
+            Item {{ i }} of {{ count }}
+    </div>
+</cdk-virtual-scroll-viewport>

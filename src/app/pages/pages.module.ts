@@ -4,8 +4,6 @@ import { DescriptionComponent } from './description/description.component';
 import { HomeComponent } from './home/home.component';
 import { ComponentsModule } from '../components/components.module';
 
-
-
 @NgModule({
   declarations: [
     HomeComponent,
