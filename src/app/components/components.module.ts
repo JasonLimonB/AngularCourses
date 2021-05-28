@@ -6,9 +6,11 @@ import { CommonModule } from '@angular/common';
 import { DescriptionComponent } from './home/description/description.component';
 import { MypipePipe } from '../pipes/mypipe.pipe';
 
+import { HttpClientModule } from '@angular/common/http';
 
 import { MyvirtualscrollComponent } from './myvirtualscroll/myvirtualscroll.component';
 import { DraganddropComponent } from './draganddrop/draganddrop.component';
+import { DragcountriesComponent } from './dragcountries/dragcountries.component';
 
 
 @NgModule({
@@ -16,17 +18,20 @@ import { DraganddropComponent } from './draganddrop/draganddrop.component';
     DescriptionComponent,
     MypipePipe,
     MyvirtualscrollComponent,
-    DraganddropComponent
+    DraganddropComponent,
+    DragcountriesComponent
   ],
   imports: [
     CommonModule,
     ScrollingModule,
-    DragDropModule
+    DragDropModule,
+    HttpClientModule
   ],
   exports: [
     DescriptionComponent,
     MyvirtualscrollComponent,
-    DraganddropComponent
+    DraganddropComponent,
+    DragcountriesComponent
   ]
 })
 export class ComponentsModule { }

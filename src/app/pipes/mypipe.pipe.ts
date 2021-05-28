@@ -11,7 +11,6 @@ export class MypipePipe implements PipeTransform {
     let words = value.split(" ");
     
     words = words.map( w => (w[0].toUpperCase() + w.substr(1)));
-    console.log(words);
 
     return words.join(' ');
   }
